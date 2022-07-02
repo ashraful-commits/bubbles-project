@@ -8,17 +8,23 @@ body{
 }
 .bubbles{
     display: flex;
+    justify-content: space-between;
 }
 
 .bubbles span{
+
     width: 20px;
     height: 20px;
     background-color: red;
     margin:0 4px;
-    border-radius:50px;
+    border-radius:100%;
     animation: animation 5s linear infinite;
     animation-delay: calc(101s/var(--i));
     box-shadow: 0 0 .5rem red, 0 0 1rem red , 0 0 2rem red;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    -ms-border-radius:100%;
+    -o-border-radius:100%;
 }
 
 .bubbles span:nth-child(even){
